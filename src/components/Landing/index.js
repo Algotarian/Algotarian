@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LoginImage from "../../asset/loginimg.svg";
 import SignUpImage from "../../asset/signupimg.jpg";
+import AlgotarianLogo from "../../asset/Algotarian-Logo-white.png";
 import {
   AppBar,
   MuiThemeProvider,
@@ -10,15 +11,12 @@ import {
   Drawer,
   List,
   ListItem,
-  CardContent,
-  Card,
-  CardActionArea,
-  CardMedia,
+  Avatar,
   Toolbar,
   Container,
   Grid,
 } from "@material-ui/core";
-import { ListRounded,SupervisedUserCircle,SupervisedUserCircleTwoTone } from "@material-ui/icons";
+import { ListRounded,SupervisedUserCircle,SupervisedUserCircleTwoTone,SupervisedUserCircleRounded } from "@material-ui/icons";
 import "./index.css";
 import CustomCard from "../Shared/Cards/index";
 import { createMuiTheme } from "@material-ui/core/styles";
@@ -48,16 +46,24 @@ export default function Index(props) {
       <AppBar position="sticky">
           <Toolbar variant="dense">
             <IconButton>
-              <ListRounded style={{ color: "white" }}></ListRounded>
+              <ListRounded style={{ color: "white",fontSize:"150%" }}></ListRounded>
             </IconButton>
+            
+            <img src = {AlgotarianLogo} height={90} style={{margin:"1%"}}></img>
             <Typography
               variant="h5"
               
-              style={{ marginLeft: "2%" }}
+              style={{ marginLeft: "1%",fontWeight:"bolder" }}
             >
-              {" "}
-              ALGOTARIAN{" "}
+           
+              ALGOTARIAN
             </Typography>
+           <Container align="right">
+           <IconButton>
+           <Avatar style={{color:"#fff"}}><SupervisedUserCircleRounded></SupervisedUserCircleRounded></Avatar>
+           </IconButton>
+           
+           </Container>
           </Toolbar>
         </AppBar>
      
