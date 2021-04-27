@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import {
    
     Typography,
@@ -19,14 +20,15 @@ export default function Index(props)
 {
     return ( <Card>
         <CardActionArea >
-         <img src={props.image} height={220} />
+         <img src={props.image} style={{padding:"5%"}} height={180} />
         </CardActionArea>
         <CardContent>
           <Typography color = "primary" paragraph>{props.title}</Typography>
         </CardContent>
         <CardActionArea>
         <Container align="center">
-        <Button color="primary"> <props.icon /> {props.type}</Button>
+        <Link to={props.link}> <Button color="primary"> <props.icon/>{props.type}</Button></Link>
+        
         </Container>
         
           

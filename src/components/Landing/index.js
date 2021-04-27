@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LoginImage from "../../asset/loginimg.svg";
-import SignUpImage from "../../asset/signupimg.jpg";
+import SignUpImage from "../../asset/signup.png";
+import Navbar from "../Shared/Navbar/index";
 import AlgotarianLogo from "../../asset/Algotarian-Logo-white.png";
 import {
   AppBar,
@@ -43,32 +44,7 @@ export default function Index(props) {
     <>
       <MuiThemeProvider theme={theme}>
       
-      <AppBar position="sticky">
-          <Toolbar variant="dense">
-            <IconButton>
-              <ListRounded style={{ color: "white",fontSize:"150%" }}></ListRounded>
-            </IconButton>
-            
-            <img src = {AlgotarianLogo} height={90} style={{margin:"1%"}}></img>
-            <Typography
-              variant="h5"
-              
-              style={{ marginLeft: "1%",fontWeight:"bolder" }}
-            >
-           
-              ALGOTARIAN
-            </Typography>
-           <Container align="right">
-           <IconButton>
-           <Avatar style={{color:"#fff"}}><SupervisedUserCircleRounded></SupervisedUserCircleRounded></Avatar>
-           </IconButton>
-           
-           </Container>
-          </Toolbar>
-        </AppBar>
-     
-        
-
+        <Navbar />
         <main>
         <Container align="center" className="mar">
             <Typography variant="h2" style = {{color:"#2196f3"}}> Online Coding Platform </Typography>
@@ -78,13 +54,13 @@ export default function Index(props) {
             </Typography>
         </Container>
           <div className="mar">
-            <Grid container justify="center" spacing={2}>
+            <Grid container justify="center" spacing={4}>
               <Grid item>
-               <CustomCard image = {LoginImage} title={"Already Have Account"} type={"login"} icon = {SupervisedUserCircle}/>
+               <CustomCard image = {LoginImage} title={"Already Have Account"} type={"login"} link={"/login"} icon = {SupervisedUserCircle}/>
 
               </Grid>
               <Grid item>
-                  <CustomCard image = {SignUpImage} title = {"Sign Up Code Right Now"} type = {"Sign Up"} icon={SupervisedUserCircleTwoTone} />
+                  <CustomCard image = {SignUpImage} title = {"Sign Up Code Right Now"} link={'/signup'} type = {"Sign Up"} icon={SupervisedUserCircleTwoTone} />
               </Grid>
             </Grid>
           </div>
