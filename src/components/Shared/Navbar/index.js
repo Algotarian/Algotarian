@@ -37,7 +37,7 @@ export default function Index(props)
             </Typography>
            <Container align="right">
            <IconButton>
-           <Avatar style={{color:"#fff"}}><SupervisedUserCircleRounded></SupervisedUserCircleRounded></Avatar>
+           <Avatar style={{backgroundColor:"#fff"}}><SupervisedUserCircleRounded style={{color:"#2196f3"}}></SupervisedUserCircleRounded></Avatar>
            </IconButton>
            
            </Container>
