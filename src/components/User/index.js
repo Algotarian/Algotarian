@@ -28,7 +28,7 @@ export default function Index(props)
     <MuiThemeProvider theme={theme}>
     <Navbar />
     <Grid container >
-        <Grid item>
+        <Grid item >
         <UserArea avatar={testimage} name={"Kanishk Dixit"} email={"kanu0704@gmail.com"} courseProgress={20} interviewProgress={30} />
         </Grid>
     </Grid>

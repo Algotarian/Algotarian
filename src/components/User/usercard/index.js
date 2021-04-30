@@ -4,7 +4,7 @@ import {Grid,Container,List,LinearProgress,Card, CardActionArea, CardContent, Li
 const usercard = (props)=>{
     return (
         <>
-        <Container style ={{borderStyle:"solid",height:"116%",borderColor:"#2196f3",borderWidth:"0px 6px 0px 0px",fontFamily:"Arial, Helvetica, sans-serif"}}>
+        <Container style ={{borderStyle:"solid",height:"127%",borderColor:"#2196f3",borderWidth:"0px 6px 0px 0px",fontFamily:"Arial, Helvetica, sans-serif"}}>
             <div style={{paddingTop:"10%"}}>
             <Avatar style={{height:"200px",width:"200px",marginTop:"3%"}} src={props.avatar}>{props.name}</Avatar>
             </div>
