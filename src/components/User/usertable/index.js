@@ -45,6 +45,6 @@ const columns = [
 export default function(props){
 
     return (<>
-    <DataGrid rows={rows} columns={columns} pageSize={7}  />
+    <DataGrid rows={rows} columns={columns}   />
     </>)
 }

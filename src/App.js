@@ -3,6 +3,7 @@ import Landing from "./components/Landing/index";
 import Login from "./components/Login/index";
 import Signup from "./components/Signup/index";
 import User from "./components/User/index";
+import Ques from "./components/Questions/index";
 function App() {
   return (
     <>
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route exact path = "/user">
         <User />
+        </Route>
+        <Route exact path = "/ques">
+          <Ques />
         </Route>
       </BrowserRouter>
     </>
