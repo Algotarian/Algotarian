@@ -32,15 +32,17 @@ export default function Index(props)
     return (<>
         <MuiThemeProvider theme={theme}>
         <Navbar></Navbar>
+        <Container style={{marginTop:"3%"}}>
+       
            <Grid container style={{marginTop:"2%"}}>
-           <Grid item>
+           <Grid item lg={8}  md={12}  sm={12} xs={12} >
        
           <Editor active={run}></Editor>
          
           </Grid>
-           <Grid item lg={4} md={12} sm={12} xl={12}> <Ques></Ques></Grid>
+           <Grid item lg={4} md={12} sm={12} xs={12}> <Ques></Ques></Grid>
            </Grid>
-           <div style={{marginRight:"7%"}}><Grid container justify="flex-end" spacing={1} style={{marginTop:"1%"}}>
+           <div style={{marginRight:"2%"}}><Grid container justify="flex-end" spacing={1} style={{marginTop:"1%"}}>
         
         <Grid item> <Button color="primary" variant="contained" onClick={(e)=>{
             setRun(true);
@@ -49,7 +51,7 @@ export default function Index(props)
         <Grid item> <Button color="primary" variant="contained"><CloudUpload></CloudUpload> Submit</Button></Grid>
     </Grid></div>
            
-        
+        </Container>
           
           
            

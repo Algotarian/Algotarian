@@ -46,7 +46,7 @@ export default function(props)
        
     <div> <Editor
      height="390px"
-     width="900px"
+     width="100%"
      language={language}
      theme={theme}
      defaultValue={`// your code
