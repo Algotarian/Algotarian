@@ -5,6 +5,7 @@ import Signup from "./components/Signup/index";
 import User from "./components/User/index";
 import Ques from "./components/Questions/index";
 import Coding from "./components/Coding/index";
+import Home from "./components/Home/index";
 function App() {
   return (
     <>
@@ -26,6 +27,9 @@ function App() {
         </Route>
         <Route exact path ="/coding">
         <Coding />
+        </Route>
+        <Route exact path="/home">
+        <Home></Home>
         </Route>
       </BrowserRouter>
     </>
